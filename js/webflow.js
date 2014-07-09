@@ -3186,3 +3186,10 @@ Webflow.define('tabs', function ($, _) {
   // Export module
   return api;
 });
+/**
+ * ----------------------------------------------------------------------
+ * Webflow: Interactions: Init
+ */
+Webflow.require('ix').init([
+  {"slug":"new-interaction","name":"New Interaction","value":{"style":{},"triggers":[]}}
+]);
