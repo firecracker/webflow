@@ -4,5 +4,9 @@
   "description": "firecracker webflow",
   "main": "css/webflow.css",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "ignore": [
+    "**/*.html",
+    "bower.json"
+  ]
 }
