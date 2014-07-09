@@ -1,0 +1,9 @@
+{
+  "name": "webflow",
+  "version": "0.0.0",
+  "homepage": "https://github.com/firecracker/bottle-rocket",
+  "description": "firecracker webflow",
+  "main": "css/webflow.css",
+  "license": "MIT",
+  "private": true
+}
