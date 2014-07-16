@@ -6,7 +6,6 @@
   "license": "MIT",
   "private": true,
   "ignore": [
-    "**/*.html",
     "bower.json"
   ]
 }
