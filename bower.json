@@ -1,12 +1,11 @@
 {
   "name": "webflow",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "firecracker webflow",
   "main": "css/mobile-firecracker.webflow.css",
   "license": "MIT",
   "private": true,
   "ignore": [
-    "**/*.html",
     "bower.json"
   ]
 }
