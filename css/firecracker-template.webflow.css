@@ -166,12 +166,13 @@ p {
   color: white;
 }
 .quiz-question-text {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: Dosis, sans-serif;
   color: #525050;
-  font-size: 32px;
-  line-height: 36px;
-  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
 }
 .quiz-answer-text {
   display: block;
@@ -180,13 +181,13 @@ p {
   color: #525050;
   font-size: 16px;
   line-height: 25px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .quiz-answer-text.bold {
   font-weight: 600;
 }
 .quiz-answer-text.highlighted {
-  color: #3fc7f1;
+  color: #40d3ff;
 }
 .dashboard-menu {
   background-color: #272d3c;
