@@ -174,14 +174,19 @@ p {
   font-weight: 500;
 }
 .quiz-answer-text {
-  display: inline-block;
-  color: #65d2f4;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #525050;
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
 }
 .quiz-answer-text.bold {
   font-weight: 600;
+}
+.quiz-answer-text.highlighted {
+  color: #3fc7f1;
 }
 .dashboard-menu {
   background-color: #272d3c;
@@ -397,7 +402,7 @@ p {
   height: 100%;
   min-width: 10px;
   border-radius: 3px;
-  background-color: rgba(88, 98, 124, 0.25);
+  background-color: rgba(88, 98, 124, 0.24);
 }
 .new-questions {
   position: absolute;
