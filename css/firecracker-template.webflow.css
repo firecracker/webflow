@@ -342,6 +342,7 @@ p {
 }
 .footer.recall-score-section {
   background-color: white;
+  text-align: center;
 }
 .side-padding-section {
   padding-right: 10px;
@@ -352,7 +353,7 @@ p {
 }
 .side-padding-section.quiz-answer-section {
   margin-top: 25px;
-  margin-bottom: 120px;
+  margin-bottom: 118px;
 }
 .quiz-assistance-text {
   color: #efefef;
@@ -441,6 +442,9 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.recall-score-centering-div {
+  display: inline-block;
+}
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
     width: 90%;
@@ -521,9 +525,6 @@ p {
     font-size: 10px;
     line-height: 19px;
   }
-  .quiz-assistance-text {
-    margin-left: 10px;
-  }
   .lower-level-header-section {
     padding-right: 17px;
     padding-left: 17px;
@@ -531,6 +532,9 @@ p {
   .topic-text-container {
     padding-right: 17px;
     padding-left: 17px;
+  }
+  .recall-score-centering-div {
+    text-align: left;
   }
 }
 
