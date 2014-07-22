@@ -405,7 +405,7 @@ p {
   height: 100%;
   min-width: 10px;
   border-radius: 3px;
-  background-color: rgba(88, 98, 124, 0.23);
+  background-color: rgba(88, 98, 124, 0.22);
 }
 .new-questions {
   position: absolute;
@@ -441,6 +441,64 @@ p {
 }
 .recall-score-centering-div {
   display: inline-block;
+}
+.form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.submit-button {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: #27cebc;
+}
+.text-field {
+  margin-bottom: 0px;
+}
+.text-field.first {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 5px;
+}
+.text-field.last {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.forgot-password {
+  float: right;
+  color: #ccc;
+  font-size: 11px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+.signup-login {
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: none;
+}
+.login-footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Dosis, sans-serif;
+  color: #293443;
+  font-size: 18px;
+}
+.student-type-label {
+  display: inline-block;
+  margin-right: 5px;
+  padding-bottom: 0px;
+  font-weight: 400;
+  text-align: right;
+}
+.student-type-dropdown {
+  display: inline-block;
+  width: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.student-type-div {
+  text-align: left;
 }
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
