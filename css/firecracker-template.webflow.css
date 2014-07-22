@@ -457,11 +457,14 @@ p {
 }
 .text-field.first {
   border-top-left-radius: 3px;
-  border-top-right-radius: 5px;
+  border-top-right-radius: 3px;
 }
 .text-field.last {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+.text-field.only {
+  border-radius: 3px;
 }
 .forgot-password {
   float: right;
@@ -590,9 +593,6 @@ p {
   }
   .recall-score-centering-div {
     text-align: left;
-  }
-  .text-field.only {
-    border-radius: 3px;
   }
 }
 
