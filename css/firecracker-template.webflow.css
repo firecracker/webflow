@@ -591,5 +591,8 @@ p {
   .recall-score-centering-div {
     text-align: left;
   }
+  .text-field.only {
+    border-radius: 3px;
+  }
 }
 
