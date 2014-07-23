@@ -1,6 +1,6 @@
 {
   "name": "webflow",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "firecracker webflow",
   "main": "css/mobile-firecracker.webflow.css",
   "license": "MIT",

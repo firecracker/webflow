@@ -161,6 +161,10 @@ p {
   font-size: 14px;
 }
 .navbar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
   height: 60px;
   background-color: #293443;
 }
@@ -405,7 +409,7 @@ p {
   height: 100%;
   min-width: 10px;
   border-radius: 3px;
-  background-color: rgba(88, 98, 124, 0.21);
+  background-color: rgba(88, 98, 124, 0.20);
 }
 .new-questions {
   position: absolute;
@@ -502,6 +506,9 @@ p {
 }
 .student-type-div {
   text-align: left;
+}
+.nav-buffer {
+  margin-top: 60px;
 }
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
