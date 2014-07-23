@@ -405,7 +405,7 @@ p {
   height: 100%;
   min-width: 10px;
   border-radius: 3px;
-  background-color: rgba(88, 98, 124, 0.22);
+  background-color: rgba(88, 98, 124, 0.21);
 }
 .new-questions {
   position: absolute;

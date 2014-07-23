@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Jul 22 2014 21:12:48 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Jul 23 2014 14:15:30 GMT+0000 (UTC) -->
 <html data-wf-site="53c66823c86102ad4cac65f0">
 <head>
   <meta charset="utf-8">
@@ -34,28 +34,30 @@
       </div>
     </div>
   </div>
-  <div class="side-padding-section">
-    <div class="w-form">
-      <form class="form" id="email-form" name="email-form" data-name="Email Form">
-        <div class="student-type-div">
-          <label class="student-type-label" for="student-type">I'm a</label>
-          <select class="w-select student-type-dropdown" id="student-type" name="student-type" required="required" data-name="student-type">
-            <option value="med-student">Med Student</option>
-            <option value="pre-med-student">Pre-Med Student</option>
-          </select>
+  <div class="w-container">
+    <div class="side-padding-section">
+      <div class="w-form">
+        <form class="form" id="email-form" name="email-form" data-name="Email Form">
+          <div class="student-type-div">
+            <label class="student-type-label" for="student-type">I'm a</label>
+            <select class="w-select student-type-dropdown" id="student-type" name="student-type" required="required" data-name="student-type">
+              <option value="med-student">Med Student</option>
+              <option value="pre-med-student">Pre-Med Student</option>
+            </select>
+          </div>
+          <input class="w-input text-field first" id="email" type="email" placeholder="name@email.com" required="required" name="email" data-name="email">
+          <input class="w-input text-field" id="password" type="text" placeholder="password" name="password" required="required" data-name="password">
+          <input class="w-input text-field last" id="password-confirmation" type="password" placeholder="password confirmation" required="required" name="password-confirmation" data-name="password-confirmation">
+          <input class="w-button submit-button" type="submit" value="Sign Up" data-wait="Please wait...">
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
         </div>
-        <input class="w-input text-field first" id="email" type="email" placeholder="name@email.com" required="required" name="email" data-name="email">
-        <input class="w-input text-field" id="password" type="text" placeholder="password" name="password" required="required" data-name="password">
-        <input class="w-input text-field last" id="password-confirmation" type="password" placeholder="password confirmation" required="required" name="password-confirmation" data-name="password-confirmation">
-        <input class="w-button submit-button" type="submit" value="Sign Up" data-wait="Please wait...">
-      </form>
-      <div class="w-form-done">
-        <p>Thank you! Your submission has been received!</p>
-      </div>
-      <div class="w-form-fail">
-        <p>Oops! Something went wrong while submitting the form :(</p>
-      </div>
-    </div><a class="signup-login" href="#">Already have an account? Log in</a>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form :(</p>
+        </div>
+      </div><a class="signup-login" href="#">Already have an account? Log in</a>
+    </div>
   </div>
   <div class="side-padding-section footer recall-score-section">
     <div class="login-footer">Learn Faster, Remember Everything</div>

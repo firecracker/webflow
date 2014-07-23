@@ -865,6 +865,7 @@ Webflow.define('touch', function ($, _) {
 
   var api = {};
   var fallback = !document.addEventListener;
+  var getSelection = window.getSelection;
 
   // Fallback to click events in old IE
   if (fallback) {
@@ -883,13 +884,14 @@ Webflow.define('touch', function ($, _) {
     var useTouch = false;
     var thresholdX = Math.min(Math.round(window.innerWidth * 0.04), 40);
     var startX, startY, lastX;
+    var _move = _.throttle(move);
 
     el.addEventListener('touchstart', start, false);
-    el.addEventListener('touchmove', move, false);
+    el.addEventListener('touchmove', _move, false);
     el.addEventListener('touchend', end, false);
     el.addEventListener('touchcancel', cancel, false);
     el.addEventListener('mousedown', start, false);
-    el.addEventListener('mousemove', move, false);
+    el.addEventListener('mousemove', _move, false);
     el.addEventListener('mouseup', end, false);
     el.addEventListener('mouseout', cancel, false);
 
@@ -931,7 +933,8 @@ Webflow.define('touch', function ($, _) {
       var velocityX = x - lastX;
       lastX = x;
 
-      if (Math.abs(velocityX) > thresholdX) {
+      // Allow swipes while pointer is down, but prevent them during text selection
+      if (Math.abs(velocityX) > thresholdX && getSelection && getSelection() + '' === '') {
         triggerEvent('swipe', evt, { direction: velocityX > 0 ? 'right' : 'left' });
         cancel();
       }
@@ -944,6 +947,7 @@ Webflow.define('touch', function ($, _) {
 
     function end(evt) {
       if (!active) return;
+      active = false;
 
       if (useTouch && evt.type === 'mouseup') {
         evt.preventDefault();
@@ -961,11 +965,11 @@ Webflow.define('touch', function ($, _) {
 
     function destroy() {
       el.removeEventListener('touchstart', start, false);
-      el.removeEventListener('touchmove', move, false);
+      el.removeEventListener('touchmove', _move, false);
       el.removeEventListener('touchend', end, false);
       el.removeEventListener('touchcancel', cancel, false);
       el.removeEventListener('mousedown', start, false);
-      el.removeEventListener('mousemove', move, false);
+      el.removeEventListener('mousemove', _move, false);
       el.removeEventListener('mouseup', end, false);
       el.removeEventListener('mouseout', cancel, false);
       el = null;
@@ -1777,7 +1781,12 @@ Webflow.define('slider', function ($, _) {
 
     // Store slider state in data
     var data = $.data(el, namespace);
-    if (!data) data = $.data(el, namespace, { index: 0, el: $el, config: {} });
+    if (!data) data = $.data(el, namespace, {
+      index: 0,
+      depth: 1,
+      el: $el,
+      config: {}
+    });
     data.mask = $el.children('.w-slider-mask');
     data.left = $el.children('.w-slider-arrow-left');
     data.right = $el.children('.w-slider-arrow-right');
@@ -1807,7 +1816,7 @@ Webflow.define('slider', function ($, _) {
     // Add events based on mode
     if (designer) {
       data.el.on('setting' + namespace, handler(data));
-      killTimer(data);
+      stopTimer(data);
       data.hasTimer = false;
     } else {
       data.el.on('swipe' + namespace, handler(data));
@@ -1817,6 +1826,7 @@ Webflow.define('slider', function ($, _) {
       // Start timer if autoplay is true, only once
       if (data.config.autoplay && !data.hasTimer) {
         data.hasTimer = true;
+        data.timerCount = 1;
         startTimer(data);
       }
     }
@@ -1838,7 +1848,6 @@ Webflow.define('slider', function ($, _) {
   function configure(data) {
     var config = {};
 
-    config.depth = 1;
     config.crossOver = 0;
 
     // Set config options from data attributes
@@ -1864,10 +1873,11 @@ Webflow.define('slider', function ($, _) {
     if (+data.el.attr('data-autoplay')) {
       config.autoplay = true;
       config.delay = +data.el.attr('data-delay') || 2000;
+      config.timerMax = +data.el.attr('data-autoplay-limit');
       // Disable timer on first touch or mouse down
       var touchEvents = 'mousedown' + namespace + ' touchstart' + namespace;
       if (!designer) data.el.off(touchEvents).one(touchEvents, function () {
-        killTimer(data);
+        stopTimer(data);
       });
     }
 
@@ -1906,25 +1916,20 @@ Webflow.define('slider', function ($, _) {
   }
 
   function startTimer(data) {
-    var config = data.config;
     stopTimer(data);
-    config.timer = window.setTimeout(function () {
-      if (!config.autoplay || designer) return;
+    var config = data.config;
+    var timerMax = config.timerMax;
+    if (timerMax && data.timerCount++ > timerMax) return;
+    data.timerId = window.setTimeout(function () {
+      if (data.timerId == null || designer) return;
       next(data)();
       startTimer(data);
     }, config.delay);
   }
 
   function stopTimer(data) {
-    var config = data.config;
-    window.clearTimeout(config.timer);
-    config.timer = null;
-  }
-
-  function killTimer(data) {
-    var config = data.config;
-    config.autoplay = false;
-    stopTimer(data);
+    window.clearTimeout(data.timerId);
+    data.timerId = null;
   }
 
   function handler(data) {
@@ -2036,7 +2041,7 @@ Webflow.define('slider', function ($, _) {
         .add(fadeRule)
         .start({ opacity: 0 });
       tram(targets)
-        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: config.depth++ })
+        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: data.depth++ })
         .add(fadeRule)
         .wait(wait)
         .then({ opacity: 1 })
@@ -2050,7 +2055,7 @@ Webflow.define('slider', function ($, _) {
         .set({ visibility: '' })
         .stop();
       tram(targets)
-        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: config.depth++ })
+        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: data.depth++ })
         .add(fadeRule)
         .start({ opacity: 1 })
         .then(resetOthers);
@@ -2064,7 +2069,7 @@ Webflow.define('slider', function ($, _) {
         .set({ visibility: '' })
         .stop();
       tram(targets)
-        .set({ visibility: '', zIndex: config.depth++, x: offsetX + anchors[data.index].width * vector })
+        .set({ visibility: '', zIndex: data.depth++, x: offsetX + anchors[data.index].width * vector })
         .add(slideRule)
         .start({ x: offsetX })
         .then(resetOthers);
@@ -2219,7 +2224,7 @@ var lightbox = (function (window, document, $, tram, undefined) {
   // Instance of Spinner
   var spinner;
 
-  function lightbox(thing) {
+  function lightbox(thing, index) {
     items = isArray(thing) ? thing : [thing];
     
     if (!$refs) {
@@ -2260,7 +2265,7 @@ var lightbox = (function (window, document, $, tram, undefined) {
     // Prevent document from scrolling while lightbox is active.
     addClass($refs.html, 'noscroll');
     
-    return lightbox.show(0);
+    return lightbox.show(index || 0);
   }
 
   /**
@@ -2698,6 +2703,7 @@ Webflow.define('lightbox', function ($, _) {
   var designer;
   var inApp = Webflow.env();
   var namespace = '.w-lightbox';
+  var groups;
 
   // -----------------------------------
   // Module methods
@@ -2713,6 +2719,9 @@ Webflow.define('lightbox', function ($, _) {
 
     // Reset Lightbox
     lightbox.destroy();
+
+    // Reset groups
+    groups = {};
 
     // Find all instances on the page
     $lightboxes = $doc.find(namespace);
@@ -2751,6 +2760,7 @@ Webflow.define('lightbox', function ($, _) {
 
   function configure(data) {
     var json = data.el.children('.w-json').html();
+    var groupId, group;
 
     if (!json) {
       data.images = [];
@@ -2765,7 +2775,23 @@ Webflow.define('lightbox', function ($, _) {
         data.embed = json.embed;
       }
       else {
-        data.images = json.images;
+        groupId = json.groupId;
+        if (groupId) {
+          group = groups[groupId];
+          if (!group) {
+            group = groups[groupId] = [];
+          }
+
+          data.images = group;
+
+          if (json.images.length) {
+            data.index = group.length;
+            group.push.apply(group, json.images);
+          }
+        }
+        else {
+          data.images = json.images;
+        }
       }
     }
     catch (e) {
@@ -2778,7 +2804,7 @@ Webflow.define('lightbox', function ($, _) {
       if (data.mode == 'video') {
         data.embed && lightbox(data.embed);
       } else {
-        data.images.length && lightbox(data.images);
+        data.images.length && lightbox(data.images, data.index || 0);
       }
     };
   }
