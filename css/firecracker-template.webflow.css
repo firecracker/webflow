@@ -21,7 +21,7 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   color: #989b9e;
   font-size: 24px;
@@ -160,6 +160,22 @@ p {
 .button.small-button {
   padding: 5px;
   font-size: 14px;
+}
+.button.modal-button {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.button.modal-button.modal-button-bright {
+  border: 2px solid #3fc7f1;
+  background-color: #f7f7f7;
+  color: #3fc7f1;
+}
+.button.modal-button.modal-button-subdued {
+  border: 2px solid #ccc;
+  background-color: #f7f7f7;
+  color: #ccc;
 }
 .navbar {
   position: fixed;
@@ -357,6 +373,11 @@ p {
   margin-top: 25px;
   margin-bottom: 118px;
 }
+.side-padding-section.modal-section {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: #efefef;
+}
 .quiz-assistance-text {
   color: #efefef;
   text-align: left;
@@ -410,7 +431,7 @@ p {
   height: 100%;
   min-width: 10px;
   border-radius: 3px;
-  background-color: rgba(88, 98, 124, 0.20);
+  background-color: rgba(88, 98, 124, 0.2);
 }
 .new-questions {
   position: absolute;
@@ -511,6 +532,62 @@ p {
 .nav-buffer {
   margin-top: 60px;
 }
+.quiz-close-icon {
+  float: right;
+}
+.modal-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ccc;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.modal-button-div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.modal-question-count {
+  display: inline-block;
+  color: #9d69ba;
+}
+.modal-summary-text {
+  display: inline-block;
+  color: #ccc;
+}
+.modal-score-text {
+  display: inline-block;
+  color: #3fc7f1;
+}
+.modal-summary-div {
+  width: 885px;
+  margin-top: 25px;
+  margin-left: 10%;
+}
+.modal-vote-button {
+  display: inline-block;
+  width: 49%;
+  max-width: 195px;
+  border: 2px solid #3fc7f1;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+}
+.modal-vote-button.modal-upvote-button {
+  float: left;
+}
+.modal-vote-button.modal-downvote-button {
+  float: right;
+}
+.modal-vote-button-div {
+  position: static;
+  width: 100%;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+}
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
     width: 90%;
@@ -601,6 +678,9 @@ p {
   }
   .recall-score-centering-div {
     text-align: left;
+  }
+  .modal-summary-div {
+    margin-left: 0%;
   }
 }
 
