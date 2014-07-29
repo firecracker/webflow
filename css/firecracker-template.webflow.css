@@ -389,7 +389,7 @@ p {
   text-align: center;
 }
 .quiz-assistance-text {
-  color: #efefef;
+  color: #ccc;
   text-align: left;
 }
 .topic-text-container {
@@ -608,6 +608,9 @@ p {
   max-width: 600px;
   margin-right: auto;
   margin-left: auto;
+}
+.quiz-pause-icon {
+  float: right;
 }
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
