@@ -153,6 +153,7 @@ p {
   font-weight: 700;
 }
 .button.show-button {
+  max-width: 600px;
   border: 2px solid #27cebc;
   background-color: white;
   color: #27cebc;
@@ -195,18 +196,19 @@ p {
   font-weight: 300;
 }
 .quiz-question-text {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 20px auto;
   font-family: Dosis, sans-serif;
   color: #525050;
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
+  text-align: left;
 }
 .quiz-answer-text {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  max-width: 600px;
+  margin: 10px auto;
   color: #525050;
   font-size: 16px;
   line-height: 25px;
@@ -382,6 +384,9 @@ p {
   padding-top: 30px;
   padding-bottom: 15px;
   background-color: #efefef;
+}
+.side-padding-section.centered {
+  text-align: center;
 }
 .quiz-assistance-text {
   color: #efefef;
