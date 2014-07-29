@@ -189,6 +189,11 @@ p {
   font-family:'Open Sans', sans-serif;
   color: white;
 }
+.menu-icon {
+  color: #909ba3;
+  font-size: 42px;
+  font-weight: 300;
+}
 .quiz-question-text {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -588,6 +593,11 @@ p {
   margin-left: auto;
   float: none;
 }
+.menu-button {
+  margin-left: -15px;
+  padding: 10px 0px 8px;
+  float: left;
+}
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
     width: 90%;
@@ -595,9 +605,6 @@ p {
   }
   .button.new-questions-incomplete-amount-button {
     width: 9%;
-  }
-  .menu-icon {
-    color: white;
   }
 }
 @media (max-width: 767px) {
