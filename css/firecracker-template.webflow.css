@@ -378,7 +378,6 @@ p {
 }
 .side-padding-section.quiz-answer-section {
   margin-top: 25px;
-  margin-bottom: 118px;
 }
 .side-padding-section.modal-section {
   padding-top: 30px;
@@ -611,6 +610,9 @@ p {
 }
 .quiz-pause-icon {
   float: right;
+}
+.quiz-text {
+  margin-bottom: 100px;
 }
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
