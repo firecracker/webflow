@@ -560,6 +560,7 @@ p {
 }
 .modal-question-count {
   display: inline-block;
+  margin-right: 10px;
   color: #9d69ba;
 }
 .modal-summary-text {
@@ -613,6 +614,10 @@ p {
 }
 .quiz-text {
   margin-bottom: 118px;
+}
+.vote-image {
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
