@@ -572,9 +572,10 @@ p {
   color: #3fc7f1;
 }
 .modal-summary-div {
-  width: 885px;
+  width: 400px;
   margin-top: 25px;
-  margin-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .modal-vote-button {
   display: inline-block;
