@@ -554,8 +554,7 @@ p {
   text-align: center;
 }
 .modal-button-div {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 8px;
   text-align: center;
 }
 .modal-question-count {
@@ -580,7 +579,7 @@ p {
 .modal-vote-button {
   display: inline-block;
   width: 49%;
-  max-width: 195px;
+  max-width: 201px;
   border: 2px solid #3fc7f1;
   border-radius: 3px;
   background-color: #f7f7f7;
@@ -710,6 +709,9 @@ p {
   }
   .modal-summary-div {
     margin-left: 0%;
+  }
+  .modal-vote-button.modal-upvote-button {
+    width: 49%;
   }
 }
 
