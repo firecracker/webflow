@@ -619,6 +619,18 @@ p {
   margin-top: 7px;
   margin-bottom: 7px;
 }
+.disclaimer-text {
+  display: inline-block;
+  color: #ccc;
+}
+.disclaimer-div {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.disclaimer-link {
+  color: #3fc7f1;
+  text-decoration: none;
+}
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
     width: 90%;
