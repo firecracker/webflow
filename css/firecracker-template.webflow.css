@@ -590,6 +590,10 @@ p {
 .modal-vote-button.modal-downvote-button {
   float: right;
 }
+.modal-vote-button.selected {
+  border-color: #3fc7f1;
+  background-color: #3fc7f1;
+}
 .modal-vote-button-div {
   position: static;
   width: 100%;
