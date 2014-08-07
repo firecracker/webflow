@@ -393,6 +393,7 @@ p {
 }
 .topic-text-container {
   margin-top: 10px;
+  padding: 0px;
 }
 .do-questions {
   display: inline-block;
@@ -648,12 +649,19 @@ p {
   .button.full-size-button {
     margin-top: 10px;
   }
+  .button.dashboard-dropdown-button {
+    width: 20%;
+  }
+  .button.dashboard-questions-button {
+    width: 70%;
+  }
   .button.new-questions-incomplete-button {
-    width: 88%;
+    width: 75%;
     margin-left: -58px;
+    font-weight: 300;
   }
   .button.new-questions-incomplete-amount-button {
-    width: 11%;
+    width: 15%;
   }
   .dashboard-review-section {
     margin-right: 10px;
@@ -662,6 +670,10 @@ p {
   .dashboard-menu-button-div {
     margin-right: 10px;
     margin-left: 10px;
+  }
+  .topic-text-paragraph {
+    margin-bottom: 0px;
+    padding: 15px 15px 0px;
   }
 }
 @media (max-width: 479px) {
@@ -672,22 +684,14 @@ p {
     font-weight: 700;
   }
   .button.dashboard-dropdown-button {
-    width: 20%;
     font-size: 17px;
-  }
-  .button.dashboard-questions-button {
-    width: 70%;
   }
   .button.new-questions-complete-button {
     width: 10%;
   }
   .button.new-questions-incomplete-button {
-    width: 75%;
     margin-left: -34px;
     background-color: rgba(125, 93, 145, 0.29);
-  }
-  .button.new-questions-incomplete-amount-button {
-    width: 15%;
   }
   .button.review-button {
     margin-right: 0px;
@@ -713,10 +717,6 @@ p {
     line-height: 19px;
   }
   .lower-level-header-section {
-    padding-right: 17px;
-    padding-left: 17px;
-  }
-  .topic-text-container {
     padding-right: 17px;
     padding-left: 17px;
   }
