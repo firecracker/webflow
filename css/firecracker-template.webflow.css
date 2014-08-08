@@ -1,5 +1,5 @@
 body {
-  margin-bottom: 0px;
+  min-height: 0px;
   font-family:'Open Sans', sans-serif;
   color: #333;
   font-size: 14px;
@@ -179,7 +179,7 @@ p {
   color: #ccc;
 }
 .navbar {
-  position: fixed;
+  position: static;
   left: 0px;
   top: 0px;
   right: 0px;
@@ -314,6 +314,8 @@ p {
   font-weight: 400;
 }
 .dashboard-review-section {
+  margin-right: 10px;
+  margin-left: 10px;
   color: white;
 }
 .dashboard-review-button-section {
@@ -334,8 +336,9 @@ p {
   right: 0px;
   bottom: 17px;
   display: inline-block;
-  width: 22px;
   height: 22px;
+  padding-right: 6px;
+  padding-left: 6px;
   border: 1px solid #272d3c;
   border-radius: 50px;
   background-color: #ff9326;
@@ -441,7 +444,7 @@ p {
   height: 100%;
   min-width: 10px;
   border-radius: 3px;
-  background-color: rgba(88, 98, 124, 0.2);
+  background-color: rgba(88, 98, 124, 0.24);
 }
 .new-questions {
   position: absolute;
@@ -472,8 +475,7 @@ p {
 }
 .dashboard-menu-button-div {
   height: 60px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 .recall-score-centering-div {
   display: inline-block;
@@ -538,9 +540,6 @@ p {
 }
 .student-type-div {
   text-align: left;
-}
-.nav-buffer {
-  margin-top: 60px;
 }
 .quiz-close-icon {
   float: right;
@@ -636,6 +635,49 @@ p {
   color: #3fc7f1;
   text-decoration: none;
 }
+.right-side {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-color: #efefef;
+}
+.left-side {
+  display: inline-block;
+  width: 75%;
+}
+.settings-icon {
+  position: static;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  float: right;
+}
+.settings-bar {
+  height: 60px;
+}
+.topic-search-field {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.recent-topics-header {
+  margin-top: 20px;
+  font-family: Dosis, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+}
+.recent-topic {
+  display: block;
+  margin-top: 20px;
+  color: #293443;
+  text-decoration: none;
+}
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
     width: 90%;
@@ -667,13 +709,12 @@ p {
     margin-right: 10px;
     margin-left: 10px;
   }
-  .dashboard-menu-button-div {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
   .topic-text-paragraph {
     margin-bottom: 0px;
     padding: 15px 15px 0px;
+  }
+  .left-side {
+    width: 100%;
   }
 }
 @media (max-width: 479px) {
