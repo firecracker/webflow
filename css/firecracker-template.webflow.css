@@ -225,6 +225,7 @@ p {
   text-align: center;
 }
 .light-h1 {
+  display: inline-block;
   margin-top: 0px;
   color: #909ba3;
   font-size: 18px;
@@ -234,6 +235,9 @@ p {
 }
 .light-h1.lower-level-h1.float-right {
   float: right;
+}
+.light-h1.move-up-tree {
+  font-size: 24px;
 }
 .product-option-text {
   margin-top: -15px;
@@ -444,7 +448,7 @@ p {
   height: 100%;
   min-width: 10px;
   border-radius: 3px;
-  background-color: rgba(88, 98, 124, 0.24);
+  background-color: rgba(88, 98, 124, 0.23);
 }
 .new-questions {
   position: absolute;
@@ -751,8 +755,6 @@ p {
     padding: 10px;
   }
   .review-question-count {
-    width: 24px;
-    height: 22px;
     border-width: 2px;
     font-size: 10px;
     line-height: 19px;
