@@ -61,7 +61,7 @@ p {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 3px;
-  background-color: #27cebc;
+  background-color: transparent;
   color: #efefef;
   font-size: 18px;
   font-weight: 600;
@@ -195,6 +195,20 @@ p {
   background-color: #f7f7f7;
   color: #ccc;
 }
+.button.move-up-tree {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: inline-block;
+  margin-top: 13px;
+  margin-bottom: auto;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  float: left;
+  color: #909ba3;
+  font-size: 24px;
+}
 .navbar {
   position: static;
   left: 0px;
@@ -254,6 +268,9 @@ p {
   float: right;
 }
 .light-h1.move-up-tree {
+  position: absolute;
+  left: 10px;
+  top: 60px;
   font-size: 24px;
 }
 .product-option-text {
@@ -703,6 +720,10 @@ p {
   color: #293443;
   text-decoration: none;
 }
+.tree-nav {
+  position: relative;
+  height: 50px;
+}
 @media (max-width: 991px) {
   .button.new-questions-incomplete-button {
     width: 90%;
@@ -758,7 +779,6 @@ p {
     font-size: 18px;
   }
   .container {
-    padding-top: 8px;
     padding-bottom: 8px;
   }
   .light-h1 {
