@@ -256,7 +256,7 @@ p {
   text-align: center;
 }
 .light-h1 {
-  display: inline-block;
+  display: block;
   margin-top: 0px;
   color: #909ba3;
   font-size: 18px;
