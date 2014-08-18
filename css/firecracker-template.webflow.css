@@ -89,6 +89,10 @@ p {
   border-color: #fb8182;
   color: #fb8182;
 }
+.button.full-size-button.multiple-choice.incorrect.not-selected.answer-shown {
+  border-color: #efefef;
+  color: #efefef;
+}
 .button.dashboard-dropdown-button {
   width: 30%;
   margin-left: 1px;
