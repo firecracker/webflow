@@ -585,6 +585,7 @@ p {
   float: none;
 }
 .menu-button {
+  margin-right: 10px;
   margin-left: -15px;
   padding: 10px 0px 8px;
   float: left;
@@ -671,12 +672,19 @@ p {
   width: 100%;
   height: 100%;
 }
+.brand {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 @media (max-width: 991px) {
 }
 @media (max-width: 767px) {
   .dashboard-review-section {
     margin-right: 10px;
     margin-left: 10px;
+  }
+  .menu-button {
+    margin-right: 0px;
   }
   .left-side {
     width: 100%;
