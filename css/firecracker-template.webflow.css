@@ -621,7 +621,7 @@ p {
   right: 0px;
   display: inline-block;
   width: 25%;
-  height: 1000%;
+  min-height: 100%;
   background-color: #efefef;
 }
 .left-side {
