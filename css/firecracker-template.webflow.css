@@ -144,9 +144,9 @@ p {
   color: #3fc7f1;
 }
 .button.modal-button.modal-button-subdued {
-  border: 2px solid #ccc;
+  border: 2px solid #909ba3;
   background-color: #f7f7f7;
-  color: #ccc;
+  color: #909ba3;
 }
 .button.move-up-tree {
   position: absolute;
@@ -523,7 +523,7 @@ p {
 .modal-text {
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #ccc;
+  color: #909ba3;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
@@ -540,17 +540,17 @@ p {
 }
 .modal-summary-text {
   display: inline-block;
-  color: #ccc;
+  color: #aaa;
 }
 .modal-score-text {
   display: inline-block;
   color: #3fc7f1;
 }
 .modal-summary-div {
-  width: 400px;
   margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 .modal-vote-button {
   display: inline-block;
