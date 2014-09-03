@@ -90,8 +90,8 @@ p {
   color: #fb8182;
 }
 .button.full-size-button.multiple-choice.incorrect.not-selected.answer-shown {
-  border-color: #efefef;
-  color: #efefef;
+  border-color: #ccc;
+  color: #ccc;
 }
 .button.review-button {
   position: static;
@@ -359,7 +359,6 @@ p {
   margin-top: 25px;
 }
 .side-padding-section.modal-section {
-  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #efefef;
 }
@@ -367,7 +366,7 @@ p {
   text-align: center;
 }
 .quiz-assistance-text {
-  color: #ccc;
+  color: #909ba3;
   text-align: left;
 }
 .topic-text-container {
