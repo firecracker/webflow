@@ -100,7 +100,6 @@ p {
 }
 .button.recall-button {
   width: 50px;
-  margin-right: 5px;
   padding: 13px 0px;
   background-color: #0b597a;
   font-size: 18px;
@@ -217,7 +216,7 @@ p {
   left: 0px;
   top: 180px;
   right: 0px;
-  bottom: 50px;
+  bottom: 70px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #eee;
@@ -227,6 +226,8 @@ p {
   padding-left: 5px;
 }
 .tree-node-row {
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(161, 161, 161, 0.22);
@@ -494,7 +495,7 @@ p {
   left: 0px;
   top: 0px;
   right: 0px;
-  bottom: 110px;
+  bottom: 116px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #eee;
@@ -507,7 +508,7 @@ p {
   bottom: 105px;
   text-align: center;
 }
-.highlighted-answer-text {
+.highlighted {
   margin-bottom: 10px;
   padding: 10px;
   border: 2px solid #aededa;
@@ -582,7 +583,7 @@ p {
 .quiz-progress {
   display: inline-block;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .quiz-progress-bar {
   position: relative;
@@ -628,12 +629,14 @@ p {
   border-radius: 5px;
   background-color: #37c1b2;
 }
-.testestsetestst {
-  position: absolute;
-  left: 5px;
-  top: 0px;
-  right: 0px;
-  height: 20px;
+.menu-text {
+  margin-bottom: 2px;
+  color: #bfbfbf;
+  font-size: 8px;
+}
+.tree-list-column {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 @media (max-width: 991px) {
 }
