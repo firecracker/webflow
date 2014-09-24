@@ -1,173 +1,98 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Sep 03 2014 16:35:32 GMT+0000 (UTC) -->
-<html data-wf-site="53c66823c86102ad4cac65f0" data-wf-page="53d69556233b11976ac3e5d5">
+<!-- Last Published: Wed Sep 24 2014 14:42:12 GMT+0000 (UTC) -->
+<html data-wf-site="541b0541ae7d30a115fa7458" data-wf-page="542177a682027adc73b7b3c9">
 <head>
   <meta charset="utf-8">
-  <title>Firecracker Template - Quiz Modal</title>
+  <title>Quiz Modal - Firecracker Mobile v2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/firecracker-template.webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/firecracker-mobile-v2.webflow.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
       google: {
-        families: ["Dosis:200,300,regular,500,600,700,800"]
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
       }
     });
   </script>
   <script type="text/javascript" src="js/modernizr.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/placeholder/favicon.ico">
+  <style type="text/css">
+    .momentum-scroll, .tree-scroll {
+        z-index: 1;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+  </style>
 </head>
 <body>
-  <div class="w-clearfix side-padding-section quiz-header">
-    <div class="quiz-subject">Biology</div>
-    <img class="quiz-close-icon" src="images/x.svg" height="36" alt="53f360831b92a02f2f930de7_x.svg">
-  </div>
-  <div class="side-padding-section modal-section">
-    <div class="modal-text">25 questions down!</div>
-    <div class="modal-text">Want to keep going?</div>
-    <div class="modal-button-div"><a class="button modal-button modal-button-bright" href="#">More Questions</a>
+  <div class="quiz-scroll quiz-modal">
+    <div class="quiz-modal-button-div">
+      <div class="modal-button-div"><a class="button clear primary" href="#">Continue</a>
+      </div>
+      <div class="modal-button-div"><a class="button clear primary" href="#">Question Feedback</a>
+      </div>
+      <div class="modal-button-div"><a class="button clear primary" href="#"><span>Back to Last Question</span></a>
+      </div>
     </div>
-    <div class="modal-button-div"><a class="button modal-button modal-button-subdued" href="#">I'm Done</a>
-    </div>
-    <div class="modal-summary-div">
-      <div class="modal-summary-text">Questions Completed:&nbsp;</div>
-      <div class="modal-question-count">23</div>
-      <div class="modal-summary-text">&nbsp;Avg. Score:&nbsp;</div>
-      <div class="modal-score-text">3.4</div>
+    <div class="modal-button-div"><a class="button clear subdued" href="#"><span>Exit to Main Screen</span></a>
     </div>
   </div>
-  <div class="side-padding-section modal-section">
-    <div class="modal-text">Like this question?</div>
-    <div class="modal-button-div">
-      <div class="w-clearfix modal-vote-button-div">
-        <div class="modal-vote-button modal-upvote-button">
-          <div class="w-embed svg">
-            <svg class="svg svg-thumbs-up" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="" viewBox="0 0 512 512" style="background-color:#ffffff00" version="1.1" xml:space="preserve" x="0px" y="0px"
-            width="512px" height="512px" inkscape:version="0.48.5 r10040" sodipodi:docname="thumbsUp.svg">
-              <metadata id="metadata3062">
-                <rdf:rdf>
-                  <cc:work rdf:about="">
-                    <dc:format>image/svg+xml</dc:format>
-                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-                  </cc:work>
-                </rdf:rdf>
-              </metadata>
-              <defs id="defs3060"></defs>
-              <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="720"
-              id="namedview3058" showgrid="false" inkscape:zoom="1.050338" inkscape:cx="221.85161" inkscape:cy="248.19432" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer=""></sodipodi:namedview>
-              <g id="Layer%201">
-                <path class="svg-thumbs-up-outer" d="m 317.5226,98.1189 c -30.1809,27.8614 -75.4523,65.0098 -104.4724,102.1584 -16.2511,19.7351 -27.8592,48.7573 -56.8792,62.6881 -16.2514,8.1262 -32.5026,13.9306 -48.7539,17.4133 -13.9298,3.4827 -31.3418,1.161 -46.4321,5.8045 C 29.6433,295.4703 25,359.3192 25,386.0197 c 0,10.4481 2.3217,94.0322 39.4673,94.0322 l 135.814,0 C 203.7638,481.213 244.3919,490.5 256,490.5 l 94.0251,0 c 13.9297,-5.8043 116.0804,6.9654 116.0804,-54.5619 0,-8.1262 -5.8039,-13.9308 -5.8039,-17.4133 0,-2.3218 8.1256,-8.1262 9.2864,-11.6089 3.4823,-5.8045 5.804,-15.0916 5.804,-17.4135 l 0,-23.2178 c -1.1609,-3.4827 -4.6432,-9.287 -4.6432,-12.7697 0,-2.3219 10.4472,-12.7698 12.7687,-18.5743 C 487,326.8143 487,312.8838 487,309.4011 c 0,-11.609 0,-19.7352 -16.2512,-32.5051 5.8039,-12.7698 10.4472,-20.896 10.4472,-29.0222 0,-26.7006 -17.4121,-37.1486 -47.593,-39.4703 l -52.2362,-1.1608 c -5.8039,-2.3219 -18.5728,-3.4827 -25.5378,-9.2873 0,-2.3216 3.4825,-6.9654 6.965,-9.287 33.6634,-32.5051 56.8793,-63.8492 56.8793,-94.0322 l 0,-25.5397 C 417.3518,49.3614 405.7438,21.5 380.206,21.5 c -33.6634,0 -44.1106,59.2054 -62.6834,76.6189 z"
-                id="path3066" style="fill:#3fc7f1"></path>
-                <path class="svg-thumbs-up-inner" d="m 350.0251,83.0273 c -3.4825,6.9654 -8.1256,18.5741 -15.0905,25.5395 -32.5023,33.6659 -77.7738,63.8491 -105.633,103.3194 -11.6081,16.2524 -22.0553,34.8268 -38.3067,51.0792 -25.5375,25.5395 -60.3617,33.6657 -88.2209,38.3094 -10.4473,2.3217 -24.377,-1.161 -34.8242,3.4825 -19.7337,9.2873 -23.2162,56.8838 -23.2162,81.2624 0,15.0917 4.6434,47.5965 10.4473,61.5273 0,0 4.6433,12.7698 10.4472,12.7698 l 138.1357,0 c 25.5378,8.1262 69.6482,11.6089 97.5076,11.6089 l 46.4321,-1.1608 c 16.2513,-5.8046 98.6684,4.6435 98.6684,-34.8268 0,-9.287 -19.7337,-1.1608 -19.7337,-16.2524 0,-15.0916 29.0201,-8.1263 29.0201,-41.7922 0,-20.8959 -12.7689,-18.5743 -12.7689,-27.8613 0,-5.8044 9.2864,-9.2871 13.9297,-12.7698 10.4473,-6.9654 10.4473,-18.5743 10.4473,-26.7005 0,-29.0222 -25.5378,-12.7698 -25.5378,-31.3441 0,-6.9654 19.7336,-18.5743 19.7336,-30.1832 0,-23.2178 -35.9848,-22.0568 -49.9145,-22.0568 l -33.6634,0 c -16.2511,-3.4827 -41.7889,-10.4481 -41.7889,-30.1832 0,-23.2178 63.8442,-59.2054 63.8442,-103.3194 l 0,-22.0568 c 1.1609,-9.2873 -6.9647,-30.1833 -19.7336,-30.1833 -12.7689,0 -27.8592,38.3095 -30.1809,41.7922 z"
-                id="path3056" style="fill:#f7f7f7"></path>
-              </g>
-            </svg>
-          </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="w-row">
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="stat-label">TIME</div>
         </div>
-        <div class="modal-vote-button modal-downvote-button">
-          <div class="w-embed svg">
-            <svg class="svg svg-thumbs-down" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="" viewBox="0 0 512 512" style="background-color:#ffffff00" version="1.1" xml:space="preserve" x="0px" y="0px"
-            width="512px" height="512px" inkscape:version="0.48.5 r10040" sodipodi:docname="thumbsdown.png.svg">
-              <metadata id="metadata3141">
-                <rdf:rdf>
-                  <cc:work rdf:about="">
-                    <dc:format>image/svg+xml</dc:format>
-                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-                    <dc:title></dc:title>
-                  </cc:work>
-                </rdf:rdf>
-              </metadata>
-              <defs id="defs3139"></defs>
-              <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="720"
-              id="namedview3137" showgrid="false" inkscape:zoom="0.921875" inkscape:cx="166.57962" inkscape:cy="270.88262" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer=""></sodipodi:namedview>
-              <path class="svg-thumbs-down-outer" d="m 194.4774,413.8811 c 30.1809,-27.8614 75.4523,-65.0098 104.4724,-102.1584 16.2511,-19.7351 27.8592,-48.7573 56.8792,-62.6881 16.2514,-8.1262 32.5026,-13.9306 48.7539,-17.4133 13.9298,-3.4827 31.3418,-1.161 46.4321,-5.8045 31.3417,-9.2871 35.985,-73.136 35.985,-99.8365 0,-10.4481 -2.3217,-94.0322 -39.4673,-94.0322 l -135.814,0 C 308.2362,30.787 267.6081,21.5 256,21.5 l -94.0251,0 C 148.0452,27.3043 45.8945,14.5346 45.8945,76.0619 c 0,8.1262 5.8039,13.9308 5.8039,17.4133 0,2.3218 -8.1256,8.1262 -9.2864,11.6089 -3.4823,5.8045 -5.804,15.0916 -5.804,17.4135 l 0,23.2178 c 1.1609,3.4827 4.6432,9.287 4.6432,12.7697 0,2.3219 -10.4472,12.7698 -12.7687,18.5743 C 25,185.1857 25,199.1162 25,202.5989 c 0,11.609 0,19.7352 16.2512,32.5051 C 35.4473,247.8738 30.804,256 30.804,264.1262 c 0,26.7006 17.4121,37.1486 47.593,39.4703 l 52.2362,1.1608 c 5.8039,2.3219 18.5728,3.4827 25.5378,9.2873 0,2.3216 -3.4825,6.9654 -6.965,9.287 -33.6634,32.5051 -56.8793,63.8492 -56.8793,94.0322 l 0,25.5397 c 2.3215,19.7351 13.9295,47.5965 39.4673,47.5965 33.6634,0 44.1106,-59.2054 62.6834,-76.6189 z"
-              id="path3145" style="fill:#3fc7f1"></path>
-              <path class="svg-thumbs-down-inner" d="m 161.9749,428.9727 c 3.4825,-6.9654 8.1256,-18.5741 15.0905,-25.5395 32.5023,-33.6659 77.7738,-63.8491 105.633,-103.3194 11.6081,-16.2524 22.0553,-34.8268 38.3067,-51.0792 25.5375,-25.5395 60.3617,-33.6657 88.2209,-38.3094 10.4473,-2.3217 24.377,1.161 34.8242,-3.4825 19.7337,-9.2873 23.2162,-56.8838 23.2162,-81.2624 0,-15.0917 -4.6434,-47.5965 -10.4473,-61.5273 0,0 -4.6433,-12.7698 -10.4472,-12.7698 l -138.1357,0 C 282.6984,43.557 238.588,40.0743 210.7286,40.0743 l -46.4321,1.1608 c -16.2513,5.8046 -98.6684,-4.6435 -98.6684,34.8268 0,9.287 19.7337,1.1608 19.7337,16.2524 0,15.0916 -29.0201,8.1263 -29.0201,41.7922 0,20.8959 12.7689,18.5743 12.7689,27.8613 0,5.8044 -9.2864,9.2871 -13.9297,12.7698 -10.4473,6.9654 -10.4473,18.5743 -10.4473,26.7005 0,29.0222 25.5378,12.7698 25.5378,31.3441 0,6.9654 -19.7336,18.5743 -19.7336,30.1832 0,23.2178 35.9848,22.0568 49.9145,22.0568 l 33.6634,0 c 16.2511,3.4827 41.7889,10.4481 41.7889,30.1832 0,23.2178 -63.8442,59.2054 -63.8442,103.3194 l 0,22.0568 c -1.1609,9.2873 6.9647,30.1833 19.7336,30.1833 12.7689,0 27.8592,-38.3095 30.1809,-41.7922 z"
-              id="path3135" style="fill:#f7f7f7"></path>
-            </svg>
-          </div>
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="stat-label">AVG</div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="stat-label">AVG</div>
+        </div>
+      </div>
+      <div class="w-row">
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="quiz-modal-stat">2m 15s</div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="quiz-modal-stat">37s</div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="quiz-modal-stat">4.3</div>
+        </div>
+      </div>
+      <div class="w-row">
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="stat-label">ELAPSED</div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="stat-label">QUESTION</div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+          <div class="stat-label">SCORE</div>
         </div>
       </div>
     </div>
-    <div class="modal-button-div">
-      <div class="w-clearfix modal-vote-button-div">
-        <div class="modal-vote-button modal-upvote-button selected">
-          <div class="w-embed svg">
-            <svg class="svg svg-thumbs-up" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="" viewBox="0 0 512 512" style="background-color:#ffffff00" version="1.1" xml:space="preserve" x="0px" y="0px"
-            width="512px" height="512px" inkscape:version="0.48.5 r10040" sodipodi:docname="thumbsUp.svg">
-              <metadata id="metadata3062">
-                <rdf:rdf>
-                  <cc:work rdf:about="">
-                    <dc:format>image/svg+xml</dc:format>
-                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-                  </cc:work>
-                </rdf:rdf>
-              </metadata>
-              <defs id="defs3060"></defs>
-              <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="720"
-              id="namedview3058" showgrid="false" inkscape:zoom="1.050338" inkscape:cx="221.85161" inkscape:cy="248.19432" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer=""></sodipodi:namedview>
-              <g id="Layer%201">
-                <path class="svg-thumbs-up-outer" d="m 317.5226,98.1189 c -30.1809,27.8614 -75.4523,65.0098 -104.4724,102.1584 -16.2511,19.7351 -27.8592,48.7573 -56.8792,62.6881 -16.2514,8.1262 -32.5026,13.9306 -48.7539,17.4133 -13.9298,3.4827 -31.3418,1.161 -46.4321,5.8045 C 29.6433,295.4703 25,359.3192 25,386.0197 c 0,10.4481 2.3217,94.0322 39.4673,94.0322 l 135.814,0 C 203.7638,481.213 244.3919,490.5 256,490.5 l 94.0251,0 c 13.9297,-5.8043 116.0804,6.9654 116.0804,-54.5619 0,-8.1262 -5.8039,-13.9308 -5.8039,-17.4133 0,-2.3218 8.1256,-8.1262 9.2864,-11.6089 3.4823,-5.8045 5.804,-15.0916 5.804,-17.4135 l 0,-23.2178 c -1.1609,-3.4827 -4.6432,-9.287 -4.6432,-12.7697 0,-2.3219 10.4472,-12.7698 12.7687,-18.5743 C 487,326.8143 487,312.8838 487,309.4011 c 0,-11.609 0,-19.7352 -16.2512,-32.5051 5.8039,-12.7698 10.4472,-20.896 10.4472,-29.0222 0,-26.7006 -17.4121,-37.1486 -47.593,-39.4703 l -52.2362,-1.1608 c -5.8039,-2.3219 -18.5728,-3.4827 -25.5378,-9.2873 0,-2.3216 3.4825,-6.9654 6.965,-9.287 33.6634,-32.5051 56.8793,-63.8492 56.8793,-94.0322 l 0,-25.5397 C 417.3518,49.3614 405.7438,21.5 380.206,21.5 c -33.6634,0 -44.1106,59.2054 -62.6834,76.6189 z"
-                id="path3066" style="fill:#f7f7f7"></path>
-                <path class="svg-thumbs-up-inner" d="m 350.0251,83.0273 c -3.4825,6.9654 -8.1256,18.5741 -15.0905,25.5395 -32.5023,33.6659 -77.7738,63.8491 -105.633,103.3194 -11.6081,16.2524 -22.0553,34.8268 -38.3067,51.0792 -25.5375,25.5395 -60.3617,33.6657 -88.2209,38.3094 -10.4473,2.3217 -24.377,-1.161 -34.8242,3.4825 -19.7337,9.2873 -23.2162,56.8838 -23.2162,81.2624 0,15.0917 4.6434,47.5965 10.4473,61.5273 0,0 4.6433,12.7698 10.4472,12.7698 l 138.1357,0 c 25.5378,8.1262 69.6482,11.6089 97.5076,11.6089 l 46.4321,-1.1608 c 16.2513,-5.8046 98.6684,4.6435 98.6684,-34.8268 0,-9.287 -19.7337,-1.1608 -19.7337,-16.2524 0,-15.0916 29.0201,-8.1263 29.0201,-41.7922 0,-20.8959 -12.7689,-18.5743 -12.7689,-27.8613 0,-5.8044 9.2864,-9.2871 13.9297,-12.7698 10.4473,-6.9654 10.4473,-18.5743 10.4473,-26.7005 0,-29.0222 -25.5378,-12.7698 -25.5378,-31.3441 0,-6.9654 19.7336,-18.5743 19.7336,-30.1832 0,-23.2178 -35.9848,-22.0568 -49.9145,-22.0568 l -33.6634,0 c -16.2511,-3.4827 -41.7889,-10.4481 -41.7889,-30.1832 0,-23.2178 63.8442,-59.2054 63.8442,-103.3194 l 0,-22.0568 c 1.1609,-9.2873 -6.9647,-30.1833 -19.7336,-30.1833 -12.7689,0 -27.8592,38.3095 -30.1809,41.7922 z"
-                id="path3056" style="fill:#3fc7f1"></path>
-              </g>
-            </svg>
+    <div class="quiz-progress-div">
+      <div class="quiz-progress">
+        <img src="images/cards_1.svg" width="18" alt="5421a670dc9f75dd73ac74ce_cards.svg">
+        <div class="quiz-progress-data">
+          <div class="quiz-progress-current">
+            <div class="quiz-progress-count">5</div>
+            <div class="quiz-progress-bar">
+              <div class="quiz-progress-bar-incomplete">
+                <div class="quiz-progress-bar-complete"></div>
+              </div>
+            </div>
           </div>
+          <div class="quiz-progress-total">80</div>
         </div>
-        <div class="modal-vote-button modal-downvote-button selected">
-          <div class="w-embed svg">
-            <svg class="svg svg-thumbs-down" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="" viewBox="0 0 512 512" style="background-color:#ffffff00" version="1.1" xml:space="preserve" x="0px" y="0px"
-            width="512px" height="512px" inkscape:version="0.48.5 r10040" sodipodi:docname="thumbsdown.png.svg">
-              <metadata id="metadata3141">
-                <rdf:rdf>
-                  <cc:work rdf:about="">
-                    <dc:format>image/svg+xml</dc:format>
-                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-                    <dc:title></dc:title>
-                  </cc:work>
-                </rdf:rdf>
-              </metadata>
-              <defs id="defs3139"></defs>
-              <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="720"
-              id="namedview3137" showgrid="false" inkscape:zoom="0.921875" inkscape:cx="166.57962" inkscape:cy="270.88262" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer=""></sodipodi:namedview>
-              <path class="svg-thumbs-down-outer" d="m 194.4774,413.8811 c 30.1809,-27.8614 75.4523,-65.0098 104.4724,-102.1584 16.2511,-19.7351 27.8592,-48.7573 56.8792,-62.6881 16.2514,-8.1262 32.5026,-13.9306 48.7539,-17.4133 13.9298,-3.4827 31.3418,-1.161 46.4321,-5.8045 31.3417,-9.2871 35.985,-73.136 35.985,-99.8365 0,-10.4481 -2.3217,-94.0322 -39.4673,-94.0322 l -135.814,0 C 308.2362,30.787 267.6081,21.5 256,21.5 l -94.0251,0 C 148.0452,27.3043 45.8945,14.5346 45.8945,76.0619 c 0,8.1262 5.8039,13.9308 5.8039,17.4133 0,2.3218 -8.1256,8.1262 -9.2864,11.6089 -3.4823,5.8045 -5.804,15.0916 -5.804,17.4135 l 0,23.2178 c 1.1609,3.4827 4.6432,9.287 4.6432,12.7697 0,2.3219 -10.4472,12.7698 -12.7687,18.5743 C 25,185.1857 25,199.1162 25,202.5989 c 0,11.609 0,19.7352 16.2512,32.5051 C 35.4473,247.8738 30.804,256 30.804,264.1262 c 0,26.7006 17.4121,37.1486 47.593,39.4703 l 52.2362,1.1608 c 5.8039,2.3219 18.5728,3.4827 25.5378,9.2873 0,2.3216 -3.4825,6.9654 -6.965,9.287 -33.6634,32.5051 -56.8793,63.8492 -56.8793,94.0322 l 0,25.5397 c 2.3215,19.7351 13.9295,47.5965 39.4673,47.5965 33.6634,0 44.1106,-59.2054 62.6834,-76.6189 z"
-              id="path3145" style="fill:#f7f7f7"></path>
-              <path class="svg-thumbs-down-inner" d="m 161.9749,428.9727 c 3.4825,-6.9654 8.1256,-18.5741 15.0905,-25.5395 32.5023,-33.6659 77.7738,-63.8491 105.633,-103.3194 11.6081,-16.2524 22.0553,-34.8268 38.3067,-51.0792 25.5375,-25.5395 60.3617,-33.6657 88.2209,-38.3094 10.4473,-2.3217 24.377,1.161 34.8242,-3.4825 19.7337,-9.2873 23.2162,-56.8838 23.2162,-81.2624 0,-15.0917 -4.6434,-47.5965 -10.4473,-61.5273 0,0 -4.6433,-12.7698 -10.4472,-12.7698 l -138.1357,0 C 282.6984,43.557 238.588,40.0743 210.7286,40.0743 l -46.4321,1.1608 c -16.2513,5.8046 -98.6684,-4.6435 -98.6684,34.8268 0,9.287 19.7337,1.1608 19.7337,16.2524 0,15.0916 -29.0201,8.1263 -29.0201,41.7922 0,20.8959 12.7689,18.5743 12.7689,27.8613 0,5.8044 -9.2864,9.2871 -13.9297,12.7698 -10.4473,6.9654 -10.4473,18.5743 -10.4473,26.7005 0,29.0222 25.5378,12.7698 25.5378,31.3441 0,6.9654 -19.7336,18.5743 -19.7336,30.1832 0,23.2178 35.9848,22.0568 49.9145,22.0568 l 33.6634,0 c 16.2511,3.4827 41.7889,10.4481 41.7889,30.1832 0,23.2178 -63.8442,59.2054 -63.8442,103.3194 l 0,22.0568 c -1.1609,9.2873 6.9647,30.1833 19.7336,30.1833 12.7689,0 27.8592,-38.3095 30.1809,-41.7922 z"
-              id="path3135" style="fill:#3fc7f1"></path>
-            </svg>
-          </div>
-        </div>
+        <img src="images/ico_pause.svg" width="25" alt="5421bbec7fed5ca22a8ada2e_ico_pause.svg">
       </div>
-    </div>
-    <div class="modal-button-div"><a class="button modal-button modal-button-bright" href="#">Hide Question Forever</a>
-    </div>
-    <div class="modal-button-div"><a class="button modal-button modal-button-subdued" href="#">Exit to Main Menu</a>
-    </div>
-    <div class="modal-summary-div">
-      <div class="modal-summary-text">Questions Completed:&nbsp;</div>
-      <div class="modal-question-count">23</div>
-      <div class="modal-summary-text">&nbsp;Avg. Score:&nbsp;</div>
-      <div class="modal-score-text">3.4</div>
-    </div>
-  </div>
-  <div class="side-padding-section modal-section">
-    <div class="modal-text">Please select a reason:</div>
-    <div class="modal-button-div"><a class="button modal-button modal-button-bright" href="#">Spelling mistake</a>
-    </div>
-    <div class="modal-button-div"><a class="button modal-button modal-button-bright" href="#">Content unclear</a>
-    </div>
-    <div class="modal-button-div"><a class="button modal-button modal-button-bright" href="#">Something is broken</a>
-    </div>
-    <div class="modal-button-div"><a class="button modal-button modal-button-bright" href="#">Other</a>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

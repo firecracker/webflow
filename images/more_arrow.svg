@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="" viewBox="0 0 200 200" style="background-color:#ffffff00" version="1.1" xml:space="preserve" x="0px" y="0px" width="200px" height="200px" data-ember-extension="1">
+  <g id="Layer%201">
+    <g>
+      <path id="Ellipse" d="M 7 100 C 7 48.6368 48.6366 7 100 7 C 151.3634 7 193 48.6368 193 100 C 193 151.3632 151.3634 193 100 193 C 48.6366 193 7 151.3632 7 100 Z" stroke="#27cebc" stroke-width="9" fill="none"/>
+      <path d="M 59.8667 102.0667 L 133.4006 102.2634 " stroke="#27cebc" stroke-width="12" fill="none"/>
+      <path d="M 111.3333 69 L 136.1333 102.0667 L 111.3333 139.2667 " stroke="#27cebc" stroke-width="12" fill="none"/>
+    </g>
+  </g>
+</svg>
