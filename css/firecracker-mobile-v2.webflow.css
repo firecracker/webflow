@@ -1,6 +1,7 @@
 body {
   min-height: 0px;
   margin-bottom: 0px;
+  background-color: #efefef;
   font-family:'Open Sans', sans-serif;
   color: #333;
   font-size: 14px;
@@ -136,15 +137,12 @@ p {
   left: 0px;
   top: 0px;
   bottom: 0px;
-  width: 45%;
+  width: 40%;
   padding-top: 10px;
   color: rgba(239, 239, 239, 0.74);
   font-size: 12px;
   font-weight: 300;
   text-decoration: none;
-}
-.nav-burst {
-  display: inline;
 }
 .breadcrumb-arrow {
   display: inline;
@@ -208,9 +206,6 @@ p {
   background-color: white;
   text-align: center;
 }
-.footer-image {
-  height: 50px;
-}
 .tree-scroll {
   position: fixed;
   left: 0px;
@@ -230,7 +225,7 @@ p {
   margin-left: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.22);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.23);
 }
 .tree-node {
   color: rgba(51, 51, 51, 0.76);
@@ -495,17 +490,17 @@ p {
   left: 0px;
   top: 0px;
   right: 0px;
-  bottom: 116px;
+  bottom: 115px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #eee;
 }
 .quiz-scroll.answer {
-  bottom: 127px;
+  bottom: 132px;
   background-color: #eee;
 }
-.quiz-scroll.quiz-modal {
-  bottom: 105px;
+.quiz-scroll.modal {
+  bottom: 111px;
   text-align: center;
 }
 .highlighted {
@@ -542,12 +537,6 @@ p {
 .mc-answer-explanation {
   margin-top: 5px;
   font-weight: 600;
-}
-.quiz-cards {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  right: 0px;
 }
 .quiz-modal-stat {
   color: #3ba9d6;
@@ -637,6 +626,10 @@ p {
 .tree-list-column {
   padding-right: 0px;
   padding-left: 0px;
+}
+.breadcrumb-icon-div {
+  display: inline-block;
+  float: left;
 }
 @media (max-width: 991px) {
 }
