@@ -210,7 +210,7 @@ p {
   left: 0px;
   top: 180px;
   right: 0px;
-  bottom: 56px;
+  bottom: 50px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #eee;
@@ -623,6 +623,9 @@ p {
   font-size: 8px;
   line-height: 15px;
 }
+.menu-text.selected {
+  color: #37c1b2;
+}
 .tree-list-column {
   padding-right: 0px;
   padding-left: 0px;
@@ -639,6 +642,14 @@ p {
 }
 .text-row {
   margin-bottom: 3px;
+}
+.topic-text-paragraph {
+  margin-bottom: 11px;
+}
+.topic-text-section {
+  margin: 15px;
+  color: rgba(51, 51, 51, 0.90);
+  font-weight: 400;
 }
 @media (max-width: 991px) {
 }
