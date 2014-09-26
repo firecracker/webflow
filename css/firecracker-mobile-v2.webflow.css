@@ -201,7 +201,6 @@ p {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  z-index: 2;
   background-color: white;
   text-align: center;
 }
@@ -522,9 +521,14 @@ p {
   font-size: 9px;
 }
 .more-info {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
   display: inline-block;
   margin-right: 5px;
   color: #27cebc;
+  line-height: 25px;
 }
 .more-info-div {
   text-align: right;
@@ -632,6 +636,7 @@ p {
 }
 .breadcrumb-icon-div {
   display: inline-block;
+  margin-top: 9px;
   float: left;
 }
 .breadcrumb-text-div {
@@ -650,6 +655,18 @@ p {
   margin: 15px;
   color: rgba(51, 51, 51, 0.90);
   font-weight: 400;
+}
+.more-info-inner-div {
+  position: relative;
+  display: inline-block;
+  width: 95px;
+  height: 25px;
+}
+.more-info-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 @media (max-width: 991px) {
 }
