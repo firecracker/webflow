@@ -245,14 +245,17 @@ p {
   top: 80px;
   right: 0px;
   bottom: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: #eee;
   text-align: center;
 }
 .modal-div {
-  margin-right: 5px;
-  margin-left: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.modal-div.center {
+  text-align: center;
 }
 .modal-text {
   display: inline;
@@ -418,6 +421,7 @@ p {
   padding: 15px 15px 30px;
   color: #484848;
   font-size: 20px;
+  line-height: 27px;
 }
 .footer-margin-div {
   padding-top: 11px;
@@ -550,6 +554,9 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.quiz-modal-button-div.no-top-margin {
+  margin-top: 0px;
+}
 .quiz-progress-data {
   display: inline-block;
 }
@@ -668,6 +675,11 @@ p {
   right: 0px;
   bottom: 0px;
 }
+.modal-aligning-text-div {
+  display: inline-block;
+  width: 275px;
+  text-align: left;
+}
 @media (max-width: 991px) {
 }
 @media (max-width: 767px) {
@@ -687,9 +699,6 @@ p {
   }
   .modal-div {
     position: relative;
-  }
-  .question-text {
-    line-height: 27px;
   }
   .mc-answer-explanation {
     margin-top: 6px;
