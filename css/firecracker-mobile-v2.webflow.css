@@ -179,17 +179,11 @@ p {
 }
 .tree-heading {
   margin-top: 11px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   color: rgba(255, 255, 255, 0.86);
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 300;
-}
-.stats-row.top {
-  margin-bottom: 12px;
-}
-.stats-row.bottom {
-  margin-top: 12px;
 }
 .stat-label {
   color: rgba(255, 255, 255, 0.23);
@@ -660,9 +654,10 @@ p {
   padding-left: 0px;
 }
 .breadcrumb-icon-div {
-  display: inline-block;
-  margin-top: 9px;
-  float: left;
+  position: absolute;
+  left: 0px;
+  top: 13px;
+  bottom: 0px;
 }
 .breadcrumb-text-div {
   display: inline-block;
