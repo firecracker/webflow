@@ -624,7 +624,6 @@ p {
 }
 .tree-progress-bar {
   position: relative;
-  width: 95%;
   height: 1px;
   margin-bottom: 20px;
 }
@@ -642,7 +641,7 @@ p {
 }
 .menu-text {
   margin-bottom: 2px;
-  color: #bfbfbf;
+  color: #aaa;
   font-size: 8px;
   line-height: 15px;
 }
