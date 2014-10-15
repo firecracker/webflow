@@ -481,6 +481,7 @@ p {
   padding-right: 0px;
 }
 .footer-content {
+  padding-top: 5px;
   padding-bottom: 5px;
   background-color: #57344c;
 }
@@ -508,12 +509,12 @@ p {
   background-color: #eee;
 }
 .quiz-scroll.answer {
-  bottom: 132px;
+  bottom: 138px;
   padding-bottom: 10px;
   background-color: #eee;
 }
 .quiz-scroll.modal {
-  bottom: 111px;
+  bottom: 95px;
   text-align: center;
 }
 .quiz-scroll.multiple-choice {
