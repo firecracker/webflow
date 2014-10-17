@@ -1,7 +1,7 @@
 body {
   min-height: 0px;
   margin-bottom: 0px;
-  background-color: #efefef;
+  background-color: #eee;
   font-family:'Open Sans', sans-serif;
   color: #333;
   font-size: 14px;
@@ -215,6 +215,9 @@ p {
   background-color: white;
   text-align: center;
 }
+.footer.transparent {
+  background-color: transparent;
+}
 .tree-scroll {
   position: fixed;
   left: 0px;
@@ -229,7 +232,7 @@ p {
   margin-left: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.21);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.20);
 }
 .tree-node {
   color: rgba(0, 0, 0, 0.90);
@@ -632,7 +635,7 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.21);
+  background-color: rgba(255, 255, 255, 0.20);
 }
 .tree-progress-bar-complete {
   width: 10%;
@@ -693,6 +696,10 @@ p {
   width: 275px;
   text-align: left;
 }
+.modal-aligning-text-div.center {
+  width: 75%;
+  text-align: center;
+}
 .more-menu-div {
   padding-right: 15px;
   padding-left: 15px;
@@ -707,13 +714,13 @@ p {
 .more-menu-item-div {
   height: 40px;
   margin-top: 10px;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.2);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.23);
 }
 .app-version-div {
   position: absolute;
   left: 0px;
   right: 0px;
-  bottom: 50px;
+  bottom: 0px;
   margin-right: 15px;
   margin-bottom: 10px;
   margin-left: 15px;
@@ -737,6 +744,9 @@ p {
   background-image: -o-linear-gradient(#5e3347, #2b3158);
   background-image: linear-gradient(#5e3347, #2b3158);
 }
+.dashboard-gradient.full-size {
+  bottom: 0px;
+}
 .no-padding-column {
   padding-right: 0px;
   padding-left: 0px;
@@ -747,7 +757,7 @@ p {
 .goal-row {
   height: 68px;
   padding-top: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.23);
 }
 .goal-name {
   margin-bottom: 7px;
@@ -777,6 +787,45 @@ p {
   font-size: 12px;
   font-weight: 300;
   text-align: center;
+}
+.questions-completed-text {
+  color: #30caba;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.questions-completed-node {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  color: #999;
+  font-size: 20px;
+  font-weight: 300;
+}
+.questions-completed-score {
+  margin-bottom: 30px;
+  color: #999;
+  font-size: 32px;
+  line-height: 28px;
+  font-weight: 300;
+}
+.questions-completed-div {
+  position: absolute;
+  left: 0px;
+  top: 44px;
+  right: 0px;
+  bottom: 70px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.more-menu-scroll {
+  position: absolute;
+  left: 0px;
+  top: 44px;
+  right: 0px;
+  bottom: 50px;
+  overflow-x: scroll;
+  overflow-y: scroll;
 }
 @media (max-width: 991px) {
 }
