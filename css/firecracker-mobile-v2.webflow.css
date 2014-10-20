@@ -791,7 +791,7 @@ p {
 .questions-completed-text {
   color: #30caba;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 28px;
   font-weight: 300;
 }
 .questions-completed-node {
@@ -814,9 +814,12 @@ p {
   left: 0px;
   top: 44px;
   right: 0px;
-  bottom: 70px;
+  bottom: 68px;
   overflow-x: scroll;
   overflow-y: scroll;
+}
+.questions-completed-div.keep-going {
+  bottom: 138px;
 }
 .more-menu-scroll {
   position: absolute;
@@ -826,6 +829,9 @@ p {
   bottom: 50px;
   overflow-x: scroll;
   overflow-y: scroll;
+}
+.questions-completed-count {
+  font-weight: 400;
 }
 @media (max-width: 991px) {
 }
