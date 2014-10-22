@@ -184,6 +184,7 @@ p {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  text-align: left;
 }
 .stat-label {
   color: rgba(255, 255, 255, 0.22);
@@ -659,7 +660,7 @@ p {
 .breadcrumb-icon-div {
   position: absolute;
   left: 0px;
-  top: 13px;
+  top: 10px;
   bottom: 0px;
 }
 .breadcrumb-text-div {
