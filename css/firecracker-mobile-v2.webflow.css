@@ -358,7 +358,6 @@ p {
   display: inline;
   color: #533b52;
   font-size: 24px;
-  line-height: 24px;
   font-weight: 400;
 }
 .login-container {
@@ -580,9 +579,11 @@ p {
 }
 .quiz-progress-data {
   display: inline-block;
+  width: 80%;
 }
 .quiz-progress-current {
   display: inline-block;
+  width: 90%;
   line-height: 8px;
 }
 .quiz-progress-total {
@@ -600,12 +601,12 @@ p {
 }
 .quiz-progress {
   display: inline-block;
+  width: 100%;
   padding-top: 5px;
   padding-bottom: 10px;
 }
 .quiz-progress-bar {
   position: relative;
-  width: 240px;
   height: 2px;
 }
 .quiz-progress-bar-complete {
