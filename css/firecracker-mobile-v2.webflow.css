@@ -458,10 +458,10 @@ p {
   width: 275px;
   padding-top: 15px;
   padding-bottom: 15px;
-  border: 2px solid #40d3ff;
+  border: 2px solid #36b4de;
   border-radius: 5px;
-  color: #40d3ff;
-  font-weight: 300;
+  color: #36b4de;
+  font-weight: 400;
   text-align: left;
 }
 .mc-answer.selected.correct {
