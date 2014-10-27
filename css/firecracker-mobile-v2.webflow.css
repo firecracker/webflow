@@ -554,6 +554,7 @@ p {
   display: inline-block;
   margin-right: 5px;
   color: #27cebc;
+  font-size: 14px;
   line-height: 25px;
   font-weight: 400;
 }
