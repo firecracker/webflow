@@ -721,7 +721,7 @@ p {
 .more-menu-item-div {
   height: 40px;
   margin-top: 10px;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.21);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.23);
 }
 .app-version-div {
   position: absolute;
@@ -839,6 +839,19 @@ p {
 }
 .questions-completed-count {
   font-weight: 400;
+}
+.recommendation-modal-text {
+  color: rgba(0, 0, 0, 0.8);
+}
+.recommendation-modal-div {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal-header {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  font-weight: 300;
 }
 @media (max-width: 991px) {
 }
