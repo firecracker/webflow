@@ -189,7 +189,7 @@ p {
   text-align: left;
 }
 .stat-label {
-  color: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.21);
   font-size: 9px;
   line-height: 9px;
   font-weight: 600;
@@ -245,7 +245,7 @@ p {
   margin-left: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.22);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.23);
 }
 .tree-node-row.create-goal {
   margin-right: 0px;
@@ -737,7 +737,7 @@ p {
 .more-menu-item-div {
   height: 40px;
   margin-top: 10px;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.20);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.2);
 }
 .app-version-div {
   position: absolute;
@@ -779,7 +779,7 @@ p {
 .goal-row {
   height: 68px;
   padding-top: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
 }
 .goal-name {
   margin-bottom: 7px;
@@ -898,6 +898,23 @@ p {
   padding-left: 4px;
   border-radius: 5px;
   background-color: #ddd;
+}
+.list-divider {
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.90);
+  font-size: 12px;
+  font-weight: 600;
+}
+.search-scroll {
+  position: absolute;
+  left: 0px;
+  top: 44px;
+  right: 0px;
+  bottom: 0px;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 @media (max-width: 991px) {
 }
