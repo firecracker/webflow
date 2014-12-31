@@ -855,6 +855,7 @@ p {
 }
 .more-menu-scroll.full {
   bottom: 0px;
+  padding-bottom: 5px;
 }
 .questions-completed-count {
   font-weight: 400;
