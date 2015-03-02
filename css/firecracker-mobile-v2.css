@@ -189,7 +189,7 @@ p {
   text-align: left;
 }
 .stat-label {
-  color: rgba(255, 255, 255, 0.20);
+  color: rgba(255, 255, 255, 0.2);
   font-size: 9px;
   line-height: 9px;
   font-weight: 600;
@@ -245,7 +245,7 @@ p {
   margin-left: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.22);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.21);
 }
 .tree-node-row.create-goal {
   margin-right: 0px;
@@ -583,7 +583,8 @@ p {
 }
 .mc-answer-explanation {
   margin-top: 5px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 700;
 }
 .quiz-modal-stat {
   color: #3ba9d6;
@@ -779,7 +780,7 @@ p {
 .goal-row {
   height: 68px;
   padding-top: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .goal-name {
   margin-bottom: 7px;
@@ -922,6 +923,9 @@ p {
   bottom: 0px;
   overflow-x: auto;
   overflow-y: auto;
+}
+.mc-answer-explanation-text {
+  font-size: 12px;
 }
 @media (max-width: 991px) {
 }
